@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 import { render }           from 'react-dom';
-
-class HelloWorld extends Component {
-	render () {
-		return <h1>Hello World</h1>;
-	}
-}
+import HelloWorld           from 'components/hello-world';
 
 render(<HelloWorld />, document.getElementById('container'));

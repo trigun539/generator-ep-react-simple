@@ -10,6 +10,8 @@
 		"start": "serve",
 		"build": "webpack",
 		"predev": "serve",
-		"dev": "webpack --watch"
+		"dev": "webpack --watch",
+		"test": "mocha test/helpers/setup.js test/**/*.spec.js",
+		"test:cov": "istanbul cover ./node_modules/.bin/_mocha test/**/*.spec.js -- --compilers js:babel-register"
   }
 }
