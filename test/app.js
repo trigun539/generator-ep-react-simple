@@ -1,18 +1,31 @@
-'use strict';
-var path = require('path');
-var assert = require('yeoman-assert');
-var helpers = require('yeoman-test');
+import path    from 'path';
+import assert  from 'yeoman-assert';
+import helpers from 'yeoman-test';
 
-describe('generator-ep-react-ui-only:app', function () {
-  before(function () {
+describe('generator-ep-react-ui-only:app', () => {
+
+	before(() => {
     return helpers.run(path.join(__dirname, '../generators/app'))
-      .withPrompts({someAnswer: true})
+			.withPrompts({
+				name: 'testproject',
+				description: 'Awesome project'
+			})
       .toPromise();
   });
 
-  it('creates files', function () {
+	it('should creates files', () => {
     assert.file([
-      'dummyfile.txt'
+      'webpack.config.js',
+      'package.json',
+      '.gitignore',
+      '.babelrc',
+      'favicon.ico',
+      'index.html',
+			'src/app.js',
+			'src/components/hello-world.js',
+			'test/mocha.opts',
+			'test/components/hello-world.spec.js',
+			'test/helpers/setup.js'
     ]);
   });
 });
