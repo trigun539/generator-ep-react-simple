@@ -1,0 +1,15 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.0",
+  "description": "<%= description %>",
+  "main": "index.js",
+  "devDependencies": {
+  },
+  "scripts": {
+		"prestart": "webpack",
+		"start": "serve",
+		"build": "webpack",
+		"predev": "serve",
+		"dev": "webpack --watch"
+  }
+}
