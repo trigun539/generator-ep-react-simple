@@ -8,7 +8,7 @@ module.exports = yeoman.Base.extend({
 
 		// Have Yeoman greet the user.
 		this.log(yosay(
-			'Welcome to the breathtaking ' + chalk.red('generator-ep-react-ui-only') + ' generator!'
+			'Welcome to the breathtaking ' + chalk.red('Simple React App') + ' generator!'
 		));
 
 		var prompts = [{
