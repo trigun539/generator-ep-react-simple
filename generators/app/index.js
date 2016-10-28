@@ -86,7 +86,7 @@ module.exports = yeoman.Base.extend({
 		);
 
 		// UNIT TESTING
-		
+
 		this.fs.copy(
 			this.templatePath('test/helpers/setup.js'),
 			this.destinationPath('test/helpers/setup.js')
@@ -106,15 +106,15 @@ module.exports = yeoman.Base.extend({
 
 	install: function () {
 		this.npmInstall([
-			'react', 
+			'react',
 			'react-dom',
 			'babel',
 			'babel-core',
-			'babel-loader', 
-			'babel-register', 
-			'webpack@beta', 
-			'babel-preset-es2015', 
-			'babel-preset-react', 
+			'babel-loader',
+			'babel-register',
+			'webpack@beta',
+			'babel-preset-es2015',
+			'babel-preset-react',
 			'babel-preset-stage-0',
 			'serve',
 			'mocha',

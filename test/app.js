@@ -1,10 +1,10 @@
-import path    from 'path';
-import assert  from 'yeoman-assert';
-import helpers from 'yeoman-test';
+var path    = require('path');
+var assert  = require('yeoman-assert');
+var helpers = require('yeoman-test');
 
-describe('generator-ep-react-ui-only:app', () => {
+describe('generator-ep-react-ui-only:app', function () {
 
-	before(() => {
+	before(function () {
     return helpers.run(path.join(__dirname, '../generators/app'))
 			.withPrompts({
 				name: 'testproject',
@@ -13,7 +13,7 @@ describe('generator-ep-react-ui-only:app', () => {
       .toPromise();
   });
 
-	it('should creates files', () => {
+	it('should creates files', function () {
     assert.file([
       'webpack.config.js',
       'package.json',
