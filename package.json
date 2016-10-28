@@ -9,7 +9,8 @@
     "url": "http://eperez.io"
   },
   "files": [
-    "generators"
+    "generators",
+		"test"
   ],
   "main": "generators/app/index.js",
   "keywords": [
@@ -31,7 +32,7 @@
     "yeoman-assert": "^2.0.0",
     "yeoman-test": "^1.0.0"
   },
-  "repository": "trigun539/generator-ep-react-ui-only",
+  "repository": "trigun539/generator-ep-react-simple",
   "scripts": {
     "test": "mocha",
     "coverage": "istanbul cover ./node_modules/.bin/_mocha",
