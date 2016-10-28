@@ -1,4 +1,4 @@
-# generator-ep-react-simple [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-ep-react-simple [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status](https://coveralls.io/repos/github/trigun539/generator-ep-react-simple/badge.svg?branch=master)](https://coveralls.io/github/trigun539/generator-ep-react-simple?branch=master)
 > Yeoman generator that scaffolds simple react app
 
 ## Installation
