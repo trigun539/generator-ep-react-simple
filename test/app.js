@@ -9,8 +9,7 @@ describe('generator-ep-react-ui-only:app', function () {
 			.withPrompts({
 				name: 'testproject',
 				description: 'Awesome project'
-			})
-      .toPromise();
+			});
   });
 
 	it('should creates files', function () {
