@@ -108,7 +108,6 @@ module.exports = yeoman.extend({
 		this.npmInstall([
 			'react',
 			'react-dom',
-			'babel',
 			'babel-core',
 			'babel-loader',
 			'babel-register',
